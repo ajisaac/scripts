@@ -1,12 +1,14 @@
-sudo apt-get install neovim
+# starter programs
+sudo apt-get install neovim rsync git qemu-guest-agent zsh
 
-sudo apt-get install zsh
+# set up Zsh
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm ~/.zshrc
+curl -fsSL https://raw.githubusercontent.com/ajisaac/server-setup/main/.zshrc > ~/.zshrc
 
-sudo apt-get install qemu-guest-agent
+# run the guest agent
 sudo systemctl start qemu-guest-agent
 sudo systemctl enable qemu-guest-agent
 
-sudo apt-get install rsync
 # copy the dotfiles into appropriate place
