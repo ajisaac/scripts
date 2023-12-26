@@ -10,7 +10,9 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
+bindkey "^R" history-incremental-search-backward
 bindkey -v
+set bell-style none
 zstyle ':omz:update' mode auto
 
 zstyle :compinstall filename '/home/aaron/.zshrc'
