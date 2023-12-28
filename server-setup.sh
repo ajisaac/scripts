@@ -1,6 +1,6 @@
 # starter programs
 echo "Installing programs\n"
-sudo apt-get install neovim rsync git qemu-guest-agent zsh
+sudo apt-get install neovim rsync git qemu-guest-agent zsh tldr openjdk-21-jdk
 
 # run the guest agent
 echo "Starting guest agent\n"
