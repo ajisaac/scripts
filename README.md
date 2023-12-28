@@ -1,4 +1,4 @@
-# server-setup
+# personal scripts
 Set up a new server
 
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ajisaac/server-setup/main/server-setup.sh)"`
